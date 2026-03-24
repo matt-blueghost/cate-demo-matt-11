@@ -7,9 +7,8 @@ function formatPrice(price: number): string {
   return price.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 }
 
-// TODO: Connect to cart.removeFromCart(item.id)
-function handleRemove(_itemId: string): void {
-  // no-op — waiting to be connected to the store
+function handleRemove(itemId: string): void {
+  cart.removeFromCart(itemId);
 }
 </script>
 
